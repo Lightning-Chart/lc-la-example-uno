@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup Condition="'$(LclaUseLocalSource)' != 'true'">
-    <PackageReference Include="LCLA" Version="0.0.2" />
+    <PackageReference Include="LCLA" Version="0.0.3" />
   </ItemGroup>
   <ItemGroup Condition="'$(LclaUseLocalSource)' == 'true'">
     <ProjectReference Include="..\..\packages\clients\csharp\LightningChart.LA\LightningChart.LA.csproj" />
