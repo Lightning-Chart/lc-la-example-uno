@@ -11,10 +11,4 @@ This Uno Platform example loads 1,000,000 historical samples and then streams 10
    $env:LCJS_LICENSE_KEY="your-license-key"
    ```
 
-3. Run the Windows target:
-
-   ```bash
-   dotnet run -f net8.0-windows10.0.19041
-   ```
-
-Use the Uno tooling to select another supported target.
+3. Open `LightningChartUnoExample.csproj` in Visual Studio with Uno Platform tooling, select a target, and run the project.
