@@ -1,14 +1,20 @@
 # LightningChart for Uno Platform
 
-This Uno Platform example loads 1,000,000 historical samples and then streams 10,000-sample batches.
+This Uno Platform 6.6.29 example opens in historical mode with 1,000,000 samples. Use the real-time control to start or stop 10,000-sample batches.
 
 ## Run
 
-1. Install the .NET 8 SDK or later and the matching Uno Platform tooling.
-2. Set a LightningChart JS license key:
+1. Install the .NET 10 SDK. The Windows target requires Windows 10 build 19041 or later and the Microsoft Edge WebView2 Runtime (normally already installed).
+2. Get a [free LightningChart JS trial key](https://lightningchart.com/js-charts/docs/licenses/trials/) and set it in PowerShell:
 
    ```powershell
    $env:LCJS_LICENSE_KEY="your-license-key"
    ```
 
-3. Open `LightningChartUnoExample.csproj` in Visual Studio with Uno Platform tooling, select a target, and run the project.
+3. Run the project:
+
+   ```powershell
+   dotnet run --project .\LightningChartUnoExample.csproj -p:LclaUseLocalSource=true
+   ```
+
+The app opens with historical data. Select **Start real-time** to stream, and **Stop real-time** to pause it.

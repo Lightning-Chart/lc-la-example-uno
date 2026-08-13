@@ -2,9 +2,16 @@ namespace LightningChartUnoExample;
 
 public sealed partial class App : Application
 {
+    private Window? _window;
+
     public App()
     {
         InitializeComponent();
-        MainWindow = new Window { Content = new MainPage() };
+    }
+
+    protected override void OnLaunched(LaunchActivatedEventArgs args)
+    {
+        _window = new Window { Content = new MainPage() };
+        _window.Activate();
     }
 }
