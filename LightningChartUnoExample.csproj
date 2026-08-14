@@ -13,7 +13,7 @@
     <LclaSourceProject Condition="'$(LclaSourceProject)' == ''">..\..\packages\clients\csharp\LightningChart.LA\LightningChart.LA.csproj</LclaSourceProject>
   </PropertyGroup>
   <ItemGroup Condition="'$(LclaUseLocalSource)' != 'true'">
-    <PackageReference Include="LCLA" Version="0.0.8" />
+    <PackageReference Include="LCLA" Version="0.0.9" />
   </ItemGroup>
   <ItemGroup Condition="'$(LclaUseLocalSource)' == 'true'">
     <ProjectReference Include="$(LclaSourceProject)" />
