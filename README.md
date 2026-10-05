@@ -1,6 +1,6 @@
 # LightningChart for Uno Platform
 
-This Uno Platform 6.6.29 example opens in historical mode with 1,000,000 samples. Use the real-time control to start or stop 10,000-sample batches.
+This Uno Platform example replays a drone flight from `examples/data/drone_data_timestamp_added.CSV`. Two WebViews display the charts.
 
 Learn more: [LightningChart documentation](https://lightningchart.com/lc-la/docs/)
 
@@ -16,7 +16,7 @@ Learn more: [LightningChart documentation](https://lightningchart.com/lc-la/docs
 3. Run the project:
 
    ```powershell
-   dotnet run --project .\LightningChartUnoExample.csproj -p:LclaUseLocalSource=true
+   dotnet run --project .\LightningChartUnoExample.csproj
    ```
 
-The app opens with historical data. Select **Start real-time** to stream, and **Stop real-time** to pause it.
+4. Playback starts automatically after both charts initialize. Select **Pause** to pause, then **Play** to resume.

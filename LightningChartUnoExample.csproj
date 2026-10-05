@@ -9,13 +9,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <PropertyGroup>
-    <LclaSourceProject Condition="'$(LclaSourceProject)' == ''">..\..\packages\clients\csharp\LightningChart.LA\LightningChart.LA.csproj</LclaSourceProject>
-  </PropertyGroup>
-  <ItemGroup Condition="'$(LclaUseLocalSource)' != 'true'">
-    <PackageReference Include="LCLA" Version="0.0.9" />
+  <ItemGroup>
+    <PackageReference Include="LCLA" Version="0.0.10" />
   </ItemGroup>
-  <ItemGroup Condition="'$(LclaUseLocalSource)' == 'true'">
-    <ProjectReference Include="$(LclaSourceProject)" />
+  <ItemGroup>
+    <EmbeddedResource Include="Data\drone_data_timestamp_added.CSV" LogicalName="DroneFlightData" />
   </ItemGroup>
 </Project>
