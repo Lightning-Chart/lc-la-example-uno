@@ -1,8 +1,10 @@
 # LightningChart for Uno Platform
 
-This Uno Platform example replays a drone flight from `examples/data/drone_data_timestamp_added.CSV`. Two WebViews display the charts.
+This Uno Platform example replays a drone flight from `examples/data/drone_data_timestamp_added.CSV`. Two WebViews display the charts: a telemetry chart shows altitude, horizontal speed, and vertical speed, and a route chart shows the flight path reached so far and the drone's current position. The KPI cards display the current measurements, GPS coordinates, distance, and camera metadata.
 
 Learn more: [LightningChart documentation](https://lightningchart.com/lc-la/docs/)
+
+![Uno example](/examples/uno/lcla_uno.png)
 
 ## Run
 
