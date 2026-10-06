@@ -4,7 +4,7 @@ This Uno Platform example replays a drone flight from `examples/data/drone_data_
 
 Learn more: [LightningChart documentation](https://lightningchart.com/lc-la/docs/)
 
-![Uno example](/examples/uno/lcla_uno.png)
+![Uno example](./images/lcla_uno.png)
 
 ## Run
 
